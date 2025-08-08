@@ -9,8 +9,36 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="css/styles.css">
       </head>
-      
+      <button id="resumeBtnFloating" class="resume-btn-floating" title="View Resume">
+        <i class="fa-solid fa-file-pdf"></i>
+      </button>
+      <div id="resumeModal" class="modal-overlay">
+        <div class="modal-content">
+          <span class="modal-close" id="closeModal">&times;</span>
+          <iframe src="resume.pdf" frameborder="0" class="resume-frame"></iframe>
+        </div>
+      </div>      
 <body>
+
+    <nav class="navbar">
+        <div class="nav-logo">GYANESH</div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#why-me">Why Me</a></li>
+          <li><a href="#internships">Internships</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#research-papers">Research</a></li>
+          <li><a href="#tools">Tools</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <button id="resumeBtn" class="resume-btn-nav">
+              <i class="fa-solid fa-file-pdf"></i>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      
   <!-- Hero -->
   <section class="hero">
     <h1>GYANESH SINGH</h1>
@@ -323,3 +351,21 @@
     </a>
   </div>
 </section>
+
+ <!-- Floating Resume Button (INSIDE BODY) -->
+ <button id="resumeBtnFloating" class="resume-btn-floating" title="View Resume">
+  <i class="fa-solid fa-file-pdf"></i>
+</button>
+
+<!-- Resume Modal (INSIDE BODY) -->
+<div id="resumeModal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="modal-close" id="closeModal">&times;</span>
+    <iframe src="resume.pdf" frameborder="0" class="resume-frame"></iframe>
+  </div>
+</div>
+
+<!-- Your JS file goes LAST, before </body> -->
+<script src="main.js"></script>
+</body>
+</html>
