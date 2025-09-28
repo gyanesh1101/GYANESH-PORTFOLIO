@@ -592,8 +592,8 @@ body {
   margin-top: 2.2rem;
 }
 .contact-icon {
-  width: 58px;
-  height: 58px;
+  width: 80px;
+  height: 80px;
   background: var(--bg-start);
   border-radius: 50%;
   display: flex;
